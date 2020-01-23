@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set value="${pageContext.request.contextPath }/static" var="sp"></c:set>
+<c:set value="${pageContext.request.contextPath }" var="rp"></c:set>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>login</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='layui/css/layui.css') }}">
-    <script rel="script" src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
-    <script rel="script" src="{{ url_for('static',filename='bootstrap/js/bootstrap.js') }}"></script>
-    <script rel="script" src="{{ url_for('static',filename='layui/layui.js') }}"></script>
+    <title>首页</title>
+    <link rel="stylesheet" href="${sp}/bootstrap/css/bootstrap.css${sp}/">
+    <link rel="stylesheet" href="${sp}/layui/css/layui.css${sp}/">
+    <script rel="script" src="${sp}/js/jquery.min.js${sp}/"></script>
+    <script rel="script" src="${sp}/bootstrap/js/bootstrap.js${sp}/"></script>
+    <script rel="script" src="${sp}/layui/layui.js${sp}/"></script>
 </head>
 <body>
 <div>

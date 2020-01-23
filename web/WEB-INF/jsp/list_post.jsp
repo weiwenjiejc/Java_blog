@@ -4,7 +4,7 @@
 <c:set value="${pageContext.request.contextPath }" var="rp"></c:set>
 <html>
 <head>
-    <title>首页</title>
+    <title>list_post</title>
     <link rel="stylesheet" href="${sp}/bootstrap/css/bootstrap.css${sp}/">
     <link rel="stylesheet" href="${sp}/layui/css/layui.css${sp}/">
     <script rel="script" src="${sp}/js/jquery.min.js${sp}/"></script>
