@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set value="${pageContext.request.contextPath }/static" var="sp"></c:set>
 <c:set value="${pageContext.request.contextPath }" var="rp"></c:set>
 <html>
@@ -52,11 +52,14 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        {% if LoginUser %}
-                            <a href="#">{{ LoginUser['username'] }}</a>
-                        {% else %}
-                            <a href="/html/login">登录</a>
-                        {% endif %}
+                        <c:choose>
+                            <c:when test="${sessionScope.LoginUser}">
+                                <a href="#">${sessionScope.LoginUser.username}</a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="${rp}/jsp/login">登录</a>
+                            </c:otherwise>
+                        </c:choose>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -66,7 +69,7 @@
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="/request/logout">注销</a></li>
+                            <li><a href="/req/logout">注销</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -75,9 +78,6 @@
     </nav>
 </div>
 <div>
-    {% block body_nav %}
-
-    {% endblock %}
 </div>
 </body>
 </html>
