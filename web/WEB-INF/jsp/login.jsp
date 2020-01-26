@@ -36,7 +36,7 @@
         <legend>用户登录</legend>
     </fieldset>
 
-    <form class="layui-form" action="/request/login" method="post">
+    <form class="layui-form" action="${rp}/req/login" method="post">
         <div class="layui-form-item">
             <label class="layui-form-label">用户</label>
             <div class="layui-input-block">
@@ -52,10 +52,13 @@
             </div>
         </div>
         <div class="layui-form-item">
-            {#            <label class="layui-form-label">密码</label>#}
+            <!--           <label class="layui-form-label">密码</label>-->
             <div class="layui-input-block">
-                <a href="/html/register">新用户注册</a>
+                <a href="/jsp/register">新用户注册</a>
             </div>
+        </div>
+        <div class="layui-form-item">
+            ${requestScope.msg}
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">

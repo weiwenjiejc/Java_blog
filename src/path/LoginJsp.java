@@ -12,6 +12,9 @@ import java.io.IOException;
 public class LoginJsp extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
+
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/jsp/login.jsp");
         req.setAttribute("msg","hello");
         requestDispatcher.forward(req,resp);
