@@ -1,2 +1,2 @@
 # Java_blog
-访问网址www.guradcode.cn:8080/blog/index
+访问网址www.guardcode.cn:8080/blog/index
