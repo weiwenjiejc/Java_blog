@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3d6b90ec-e488-4370-8947-70359d6f607a" name="Ubuntu" url="http://47.106.206.150">
-        <fileTransfer host="47.106.206.150" port="22" accessType="SFTP">
+        <fileTransfer host="47.106.206.150" port="22" rootFolder="/var/lib/tomcat8/webapps" accessType="SFTP">
           <advancedOptions>
             <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

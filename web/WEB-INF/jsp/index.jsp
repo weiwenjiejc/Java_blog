@@ -5,11 +5,11 @@
 <html>
 <head>
     <title>首页</title>
-    <link rel="stylesheet" href="${sp}/bootstrap/css/bootstrap.css${sp}/">
-    <link rel="stylesheet" href="${sp}/layui/css/layui.css${sp}/">
-    <script rel="script" src="${sp}/js/jquery.min.js${sp}/"></script>
-    <script rel="script" src="${sp}/bootstrap/js/bootstrap.js${sp}/"></script>
-    <script rel="script" src="${sp}/layui/layui.js${sp}/"></script>
+    <link rel="stylesheet" href="${sp}/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="${sp}/layui/css/layui.css">
+    <script rel="script" src="${sp}/js/jquery.min.js"></script>
+    <script rel="script" src="${sp}/bootstrap/js/bootstrap.js"></script>
+    <script rel="script" src="${sp}/layui/layui.js"></script>
 </head>
 <body>
 <div>

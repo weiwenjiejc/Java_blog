@@ -27,9 +27,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">首页<span class="sr-only">(current)</span></a></li>
-                    <li><a href="/post_h">发帖</a></li>
-                    <li><a href="/list_post_h">看帖</a></li>
+                    <li class="active"><a href="${rp}/index">首页<span class="sr-only">(current)</span></a></li>
+                    <li><a href="${rp}/jsp/post">发帖</a></li>
+                    <li><a href="${rp}/jsp/list">看帖</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">更多<span class="caret"></span></a>

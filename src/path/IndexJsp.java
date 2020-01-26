@@ -1,5 +1,6 @@
-package servlet;
+package path;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,10 +10,12 @@ import java.io.IOException;
 
 
 @WebServlet("/index")
-public class IndexServlet extends HttpServlet{
+public class IndexJsp extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("msg");
+        String path="/WEB-INF/jsp/index.jsp";
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher(path);
+        requestDispatcher.forward(req,resp);
     }
 
     @Override
