@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="java_blog:war exploded" />
+      <artifact name="java_blog:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1de8c653-0394-4538-8a0a-f357e6bf6349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/c3p0-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filter/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/path/ListPostJsp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/path/TestJsp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/ListPostReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/TestReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/GetTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/post_msg.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/PostBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/PostBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PostDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/MyC3P0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/MyC3P0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/path/IndexJsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/PostReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/PostReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/list_post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/list_post.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/java_blog_war.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +230,7 @@
       <updated>1579767738922</updated>
       <workItem from="1579767742625" duration="6667000" />
       <workItem from="1580003788462" duration="6492000" />
-      <workItem from="1580035500529" duration="9150000" />
+      <workItem from="1580035500529" duration="9418000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <created>1579768746223</created>
@@ -295,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580011784555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="aa">
+      <created>1580044874789</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580044874789</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,10 +325,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="72" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580009533627" />
-    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1580011783972">
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1580044944979">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580011783972" />
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580044944979" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1579768431308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -399,10 +385,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580044659327" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1580011810903">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1580044922494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580011810903" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580044922494" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579770397023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
