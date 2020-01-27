@@ -1,15 +1,25 @@
 package bean;
 
 public class PostBean {
+    private String id;
     private String title;
     private String content;
     private String author;
     private String Datetime;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "PostBean{" +
-                "title='" + title + '\'' +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", author='" + author + '\'' +
                 ", Datetime='" + Datetime + '\'' +

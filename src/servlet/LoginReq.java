@@ -26,7 +26,7 @@ public class LoginReq extends HttpServlet {
                 System.out.println("登录成功");
                 HttpSession session = req.getSession();
                 session.setAttribute("LoginUser",user);
-                path="/WEB-INF/jsp/index.jsp";
+                path="/WEB-INF/index";
             }else {
                 System.out.println("用户密码错误");
                 req.setAttribute("msg","用户密码错误");

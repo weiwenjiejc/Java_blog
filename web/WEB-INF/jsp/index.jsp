@@ -42,11 +42,28 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        带有 title 的面板标题
+                        最新博文
                     </h3>
                 </div>
                 <div class="panel-body">
-                    面板内容
+                    <ul>
+                        <c:forEach items="${requestScope.posts}" var="item">
+                            <li>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a href="">${item.title}</a>
+                                        </h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div>${item.content}</div>
+                                        <div>${item.datetime}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </c:forEach>
+
+                    </ul>
                 </div>
             </div>
         </div>
@@ -58,12 +75,29 @@
                     </h3>
                 </div>
                 <div class="panel-body">
-                    面板内容
+                    <ul id="list_posts">
+                        <c:forEach items="${requestScope.posts}" var="item">
+                            <li>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a href="">${item.title}</a>
+                                        </h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div>${item.content}</div>
+                                        <div>${item.datetime}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </c:forEach>
+
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

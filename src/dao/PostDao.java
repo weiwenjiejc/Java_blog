@@ -15,13 +15,12 @@ import java.util.List;
 public class PostDao {
     private DataSource dataSource;
     private QueryRunner queryRunner;
-
+private BeanHandler<PostBean> bean = new BeanHandler<PostBean>(PostBean.class);
     public PostDao() {
         this.dataSource = MyC3P0.getDataSource();
         queryRunner = new QueryRunner(this.dataSource);
     }
     public int addPost(PostBean post) {
-        BeanHandler<UserBean> bean = new BeanHandler<>(UserBean.class);
         String sql = "insert into b_post(p_title,p_content,p_datetime)values(?,?,?)";
         int update = 0;
         try {
@@ -35,10 +34,22 @@ public class PostDao {
 
     public List<PostBean> selectPostByLimit(Integer start, Integer count) {
         BeanListHandler<PostBean> listHandler = new BeanListHandler<>(PostBean.class);
-        String sql = "select p_title as title,p_content as content ,p_datetime as datetime from b_post limit ?, ?";
+        String sql = "select p_id as id, p_title as title,p_content as content ,p_datetime as datetime from b_post limit ?, ?";
         List<PostBean> query = null;
         try {
             query = queryRunner.query(sql, listHandler, new Object[]{start, count});
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        System.out.println(query);
+        return query;
+    }
+    public PostBean selectPostById(String id) {
+        BeanListHandler<PostBean> listHandler = new BeanListHandler<>(PostBean.class);
+        String sql = "select p_id as id, p_title as title,p_content as content ,p_datetime as datetime from b_post where p_id=?";
+        PostBean query = null;
+        try {
+            query = queryRunner.query(sql, bean, id);
         } catch (SQLException e) {
             e.printStackTrace();
         }

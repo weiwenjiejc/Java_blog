@@ -15,9 +15,9 @@
 <div>
     <ul class="layui-nav layui-bg-green">
         <li class="layui-nav-item"><a href="/">guardcode</a></li>
-        <li class="layui-nav-item"><a href="/">首页</a></li>
-        <li class="layui-nav-item layui-this"><a href="/html/login">登录</a></li>
-        <li class="layui-nav-item"><a href="/html/register">注册</a></li>
+        <li class="layui-nav-item"><a href="${rp}/index">首页</a></li>
+        <li class="layui-nav-item layui-this"><a href="${rp}/jsp/login">登录</a></li>
+        <li class="layui-nav-item"><a href="${rp}/jsp/register">注册</a></li>
     </ul>
     <script>
         layui.use('element', function () {

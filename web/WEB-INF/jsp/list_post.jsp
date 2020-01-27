@@ -23,11 +23,16 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <a href="">${item.title}</a>
+                            <a href="${rp}/jsp/onePost?id=${item.id}">${item.title}</a>
                         </h3>
                     </div>
                     <div class="panel-body">
                         <div>${item.content}</div>
+                        <div>
+                            <span>点赞</span>
+                            <span>观看</span>
+                            <span>评论</span>
+                        </div>
                         <div>${item.datetime}</div>
                     </div>
                 </div>

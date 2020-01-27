@@ -53,7 +53,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <c:choose>
-                            <c:when test="${sessionScope.LoginUser}">
+                            <c:when test="${sessionScope.LoginUser!=null}">
                                 <a href="#">${sessionScope.LoginUser.username}</a>
                             </c:when>
                             <c:otherwise>
