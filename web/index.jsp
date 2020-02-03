@@ -9,8 +9,12 @@
 <html>
   <head>
     <title>首页</title>
+    <script>
+      window.location.href = "${pageContext.request.contextPath}/wel";
+    </script>
   </head>
   <body>
-  <jsp:forward page="${pageContext.request.contextPath}/index"></jsp:forward>
+<%--  <jsp:forward page="/WEB-INF/jsp/index.jsp"></jsp:forward>--%>
+<%--  <a href="${pageContext.request.contextPath}/wel">dianwo</a>--%>
   </body>
 </html>

@@ -77,7 +77,7 @@
             layer.alert(JSON.stringify(data.field), {
                 title: '最终的提交信息'
             })
-            return true;
+            return false;
         });
     });
 </script>

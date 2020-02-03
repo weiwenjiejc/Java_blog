@@ -15,7 +15,7 @@ import java.io.IOException;
 @WebServlet("/req/login")
 public class LoginReq extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         UserDao userDao = new UserDao();
@@ -26,7 +26,7 @@ public class LoginReq extends HttpServlet {
                 System.out.println("登录成功");
                 HttpSession session = req.getSession();
                 session.setAttribute("LoginUser",user);
-                path="/WEB-INF/index";
+                path="/index.jsp";
             }else {
                 System.out.println("用户密码错误");
                 req.setAttribute("msg","用户密码错误");
@@ -38,13 +38,12 @@ public class LoginReq extends HttpServlet {
             path="/WEB-INF/jsp/login.jsp";
         }
         RequestDispatcher requestDispatcher = req.getRequestDispatcher(path);
-        //req.setAttribute("msg","hello");
         requestDispatcher.forward(req,resp);
         System.out.println("nihao");
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req,resp);
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
     }
 }
